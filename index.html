@@ -1,11 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalrav Interior</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+
+
+  <!-- nevbar -->
+
+  <nav class="navbar">
+    <ul class="nav-items">
+      <li><a href="#logo">Home</a></li>
+      <li><a href="#statistics">Services</a></li>
+    </ul>
+    <div class="logo" id="logo"><img src="Images/logo.png" alt=""></div>
+    <ul class="nav-items">
+      <li><a href="#About_Us">About Us</a></li>
+      <li><a href="#main_form_div">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <button class="menu-btn1" onclick="toggleNavbar()">☰</button>
+  <div class="overlay1" onclick="toggleNavbar()"></div>
+  <nav class="navbar1" id="sidebar1">
+    <ul style="list-style: none;">
+      <li><a href="#logo">Home</a></li>
+      <li><a href="#statistics">Services</a></li>
+      <li><a href="#About_Us">About Us</a></li>
+      <li><a href="#main_form_div">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleNavbar() {
+      document.getElementById('sidebar1').classList.toggle('active');
+      document.querySelector('.overlay1').classList.toggle('active');
+    }
+  </script>
+
+  <!-- navbar -->
+
+  <div class="mainIMG">
+    <div class="overlay"></div>
+    <div class="main_text">
+      <h1>Transforming spaces into soulful sanctuaries.</h1>
+      <p>"Good design is obvious, Great design is transparent."</p>
+    </div>
+  </div>
+
+
+  <!-- statistics -->
+  <div id="statistics">
+    <div class="statistics_box">
+      <font class="statistics_heading">Years Of Expertise</font>
+      <br>
+      <font class="statistics_numbers">2+</font>
+    </div>
+    <div class="statistics_box">
+      <font class="statistics_heading">Projects Done So Far</font>
+      <br>
+      <font class="statistics_numbers">10+</font>
+    </div>
+    <div class="statistics_box">
+      <font class="statistics_heading">Work Satisfaction</font>
+      <br>
+      <font class="statistics_numbers">100%</font>
+    </div>
+  </div>
+  <!-- statistics -->
+
+
+  <!-- Services -->
+
+  <div class="services_box">
+    <h2>Area Of Expertise</h2>
+    <hr>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we believe that exceptional interior
+      design has the power to enrich lives by creating spaces that are both functional and beautiful. With a passion for
+      creativity and a commitment to excellence, we offer a comprehensive range of interior design services tailored to
+      meet the unique needs and preferences of each client.</p>
+  </div>
+
+
+
+  <div class="area_of_expertise">
+    <div class="designs" id="traditional">
+      <h3>Traditioal Design</h3>
+      <p>Where tradition meets innovation for homes that tell stories.</p>
+    </div>
+
+    <div class="designs" id="modern">
+      <h3>Modern Design</h3>
+      <p>We transform spaces into stunning and personalized environments that inspire and delight.</p>
+    </div>
+
+    <div class="designs" id="minimal">
+      <h3>Minimal Design</h3>
+      <p>Crafting spaces that inspire trust and evoke satisfaction - that's the hallmark of our interior design company.
+      </p>
+    </div>
+
+    <div class="designs" id="threeD">
+      <h3> 3D Representation</h3>
+      <p>It's like the secret sauce that makes your design dreams come to life, all while keeping things practical and
+        safe.</p>
+    </div>
+  </div>
+
+
+  <section class="filter-menu" id="Expertise_imgs">
+    <ul class="ul">
+      <li class="current">All</li>
+      <li>Traditional Design</li>
+      <li>Modern Design</li>
+      <li>Minimal Design</li>
+      <li>3D Representation</li>
+    </ul>
+
+    <hr>
+    <div class="items">
+
+      <div class="project_items" data-filter="Traditional Design">
+        <img src="Images/Traditional/1.jpg" alt="1">
+        <div class="img-text">
+          Traditional Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="Traditional Design">
+        <img src="Images/Traditional/2.jpg" alt="2">
+        <div class="img-text">
+          Traditional Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="Modern Design">
+        <img src="Images/Modern/1.jpg" alt="1">
+        <div class="img-text">
+          Modern Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="Modern Design">
+        <img src="Images/Modern/2.jpg" alt="2">
+        <div class="img-text">
+          Modern Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="Minimal Design">
+        <img src="Images/Minimal/1.jpg" alt="1">
+        <div class="img-text">
+          Minimal Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="Minimal Design">
+        <img src="Images/Minimal/2.jpg" alt="2">
+        <div class="img-text">
+          Minimal Design
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="3D Representation">
+        <img src="Images/3D/1.jpg" alt="1">
+        <div class="img-text">
+          3D Representation
+        </div>
+      </div>
+
+      <div class="project_items" data-filter="3D Representation">
+        <img src="Images/3D/2.jpg" alt="2">
+        <div class="img-text">
+          3D Representation
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="popup-imag">
+    <span>&times;</span>
+    <img src="Images/Traditional/1.jpg" alt="">
+  </div>
+
+  <!-- Services -->
+
+
+  <!-- owner -->
+  <div class="owners" id="About_Us">
+    <div class="founder">
+      <img src="Images/Asit.jpg" alt="Founder & Interior Designer">
+      <font class="name">Asit Savaliya</font>
+      <p class="position">Founder &<br>Interior Designer</p>
+    </div>
+    <div class="CEO">
+      <img src="Images/pratik.jpg" alt="CEO & Business Associate">
+      <font class="name">Pratik Savaliya</font>
+      <p class="position">CEO &<br>Business Associate</p>
+    </div>
+  </div>
+  <!-- owner -->
+
+
+  <!-- Vision & Mission -->
+
+  <div class="outerBox">
+    <div class="mission">
+      <h2 class="res_heading">MISSION:</h2>
+      <h4 class="res_heading">UNLEASH THE AWESOMENESS!</h4>
+      <img src="Images/mission.jpg" alt="Mission">
+      <div class="mission_text">
+        <h2>MISSION:</h2>
+        <h4>UNLEASH THE AWESOMENESS!</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To sprinkle a dash of magic and turn spaces into cozy havens
+          that capture the spirit and dreams of our clients. With our love for all things creative, eye for details, and
+          drive for perfection, our goal is to blow minds, crafting designs that jazz up lives and elevate moments to
+          the next level.</p>
+      </div>
+    </div>
+
+    <div class="vision">
+      <h2 class="res_heading">VISION:</h2>
+      <h4 class="res_heading">FROM VISION TO REALITY!</h4>
+      <div class="vision_text">
+        <h2>VISION:</h2>
+        <h4>FROM VISION TO REALITY!</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our dream? To rock the interior design world by mixing
+          practicality with pizzazz! We aim to build solid connections with clients, partners, and neighborhoods,
+          creating a vibe of trust, creativity, and high-fives. Pledging to be eco-friendly and always upping our game,
+          we see a future filled with spaces that are classic stunners, leaving a legacy of beauty and creativity
+          behind.</p>
+      </div>
+      <img src="Images/vision.jpg" alt="Vision">
+      <p class="res_heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our dream? To rock the interior design
+        world by mixing
+        practicality with pizzazz! We aim to build solid connections with clients, partners, and neighborhoods,
+        creating a vibe of trust, creativity, and high-fives. Pledging to be eco-friendly and always upping our game,
+        we see a future filled with spaces that are classic stunners, leaving a legacy of beauty and creativity
+        behind.</p>
+    </div>
+  </div>
+
+  <!-- Vision & Mission -->
+
+  <!-- Carrier collaboration  -->
+
+  <h1 class="Carrier_collaboration">Carrier collaboration</h1>
+
+  <marquee behavior="scroll" direction="left">
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+
+    <a href="" target="_blank">
+      <img src="Images/colaboration_icon/OFFLINE_CAPTURE_LOGO.png" alt="OFFLINE_CAPTURE_LOGO"
+        style="filter: brightness(0%); width: 150px;">
+    </a>
+
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+
+    <a href="https://avadhpatel001.github.io/Portfolio_Avadh/" target="_blank">
+      <img src="Images/colaboration_icon/ALPHA_TECH.png" alt="ALPHA_TECH">
+    </a>
+  </marquee>
+
+  <!-- Carrier collaboration  -->
+
+
+  <!-- Testimonials -->
+
+  <h1 class="testimonial-title">Testimonials</h1>
+  <p class="testimonial-subtitle">What Our Customer Saying... </p>
+
+  <div class="testimonial-container">
+    <div class="buttons">
+      <button onclick="scrollTestimonialsLeft()" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;"><</button>
+      <button onclick="scrollTestimonialsRight()" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">></button>
+    </div>
+
+    <div class="testimonials_div" id="testimonials_div">
+      <div class="testimonial">
+        <img src="Images/Testimonials/profile1.png" alt="Profile 1">
+        <p class="review_text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores corrupti, expedita
+          mollitia veritatis hic itaque animi maxime modi, culpa consectetur doloremque! Earum, consequatur unde beatae
+          architecto exercitationem odio recusandae perspiciatis?"</p>
+        <label class="reviewer_name">Avadh R.</label>
+        <label class="reviewer_address">- Rajkot, Gujarat</label>
+      </div>
+
+      <div class="testimonial">
+        <img src="Images/Testimonials/profile1.png" alt="Profile 2">
+        <p class="review_text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate distinctio culpa
+          nihil quo fugiat vitae sunt voluptatibus! Dolor, non, ipsam maiores minus quo fugiat deleniti voluptates ab
+          velit possimus sit?"</p>
+        <label class="reviewer_name">Avadh R.</label>
+        <label class="reviewer_address">- Rajkot, Gujarat</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+
+  <!-- form -->
+
+  <div id="main_form_div" class="main_form_div">
+    <h1>Let's Discuss Your Project!</h1>
+    <p>Fill this form and we will contact you!</p>
+
+    <form onsubmit="sendEmail(event)" method="POST" id="contactForm" class="contactForm">
+      <input type="text" placeholder="Your Name" id="your_name" class="your_name">
+      <div class="error" id="nameError"></div>
+
+      <input type="email" placeholder="Your Email" id="your_email" class="your_email">
+      <div class="error" id="emailError"></div>
+      <textarea name="message" id="your_message" placeholder="Your Message" rows="2"></textarea>
+      <div class="error" id="messageError"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- form -->
+
+    <!-- Notice -->
+    <div class="notice">
+      <label>For 1:1 meeting, contact me on WhatsApp :</label>
+      <a href="#" onclick="redirectToWhatsApp()" target="_blank">
+        <img src="Images/Footer Icon/whatsapp_icon.png" alt="whatsapp_icon">
+      </a>
+    </div>
+    <!-- Notice -->
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="main_footer">
+        <div class="left">
+          <img src="Images/footer_logo.png" alt="Kalrav Interior">
+          <h2>social medial handles</h2>
+          <div class="icons">
+            <a href=""><img src="Images/Footer Icon/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="Images/Footer Icon/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="Images/Footer Icon/whatsapp.png" alt="Whatsapp"></a>
+            <a href=""><img src="Images/Footer Icon/linkedin.png" alt="Linkedin"></a>
+          </div>
+        </div>
+
+        <div class="middle">
+          <a href="#logo">Home</a>
+          <a href="#statistics">Services</a>
+          <a href="#About_Us">About Us</a>
+          <a href="#main_form_div">Contact</a>
+        </div>
+
+        <div class="right">
+          <h2>CONTACT</h2>
+          <div>
+            <img src="Images/Footer Icon/location.png" alt="location">
+            <font>Ahmedabad, Gujrat</font>
+          </div>
+
+          <div>
+            <img src="Images/Footer Icon/call.png" alt="call">
+            <font>+91 95866 41338<br>+91 83473 42356</font>
+          </div>
+
+          <div>
+            <img src="Images/Footer Icon/email.png" alt="email">
+            <font>kalravinterior@gmail.com</font>
+          </div>
+
+        </div>
+      </div>
+      <img src="Images/Footer Icon/Way_To_Culture_FONT.png" alt="Way To Culture" class="wat_to_culture">
+
+      <div class="copyright_div">
+        <font class="f1">Copyright &copy;2025 Kalrav Interior; Designed by</font>
+        <font class="f2">&nbsp;ALPHA TECH</font>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script type="text/JavaScript" src="script.js"></script>
+
 </body>
+
 </html>
