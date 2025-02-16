@@ -794,19 +794,16 @@ marquee a img {
     color: #DDDDDD;
     text-decoration: underline;
   }
-  .right a{
-    text-decoration: none;
-    margin: 4vw;
-  }
-  .right a div{
+  .right div{
     display: flex;
     align-items: center;
   }
-  .right a div img{
+  .right div img{
     width: 3vw;
     height: fit-content;
+    margin: 1.5vw 0;
   }
-  .right a div font{
+  .right div font{
     color: #DDDDDD;
     font-size: 2vw;
     margin-left: 2vw;
