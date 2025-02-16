@@ -26,22 +26,19 @@
     </ul>
   </nav>
 
-  <button class="menu-btn1" onclick="toggleNavbar()">☰</button>
-  <div class="overlay1" onclick="toggleNavbar()"></div>
+  <button class="menu-btn1">☰</button>
+  <div class="overlay1"></div>
   <nav class="navbar1" id="sidebar1">
     <ul style="list-style: none;">
-      <li><a href="#logo">Home</a></li>
-      <li><a href="#statistics">Services</a></li>
-      <li><a href="#About_Us">About Us</a></li>
-      <li><a href="#main_form_div">Contacts</a></li>
+      <li><a href="#logo" class="nav-link">Home</a></li>
+      <li><a href="#statistics" class="nav-link">Services</a></li>
+      <li><a href="#About_Us" class="nav-link">About Us</a></li>
+      <li><a href="#main_form_div" class="nav-link">Contacts</a></li>
     </ul>
   </nav>
 
   <script>
-    function toggleNavbar() {
-      document.getElementById('sidebar1').classList.toggle('active');
-      document.querySelector('.overlay1').classList.toggle('active');
-    }
+    
   </script>
 
   <!-- navbar -->

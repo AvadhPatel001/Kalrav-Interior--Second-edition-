@@ -1,3 +1,29 @@
+// Navigation Bar
+
+const menu_btn = document.querySelector('.menu-btn1');
+const navbar1 = document.querySelector('.navbar1');
+const overlay1 = document.querySelector('.overlay1');
+
+menu_btn.addEventListener("click", () => {
+    navbar1.classList.toggle("active");
+    overlay1.classList.toggle("active");
+})
+
+overlay1.addEventListener("click", () => {
+    navbar1.classList.toggle("active");
+    overlay1.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    navbar1.classList.remove("active");
+    overlay1.classList.remove("active");
+}))
+
+// Navigation Bar
+
+
+// Menu Filter
+
 const liproduct = document.querySelectorAll('.ul li');
 const product_items = document.querySelectorAll('.project_items');
 liproduct.forEach(li => {
@@ -17,6 +43,7 @@ liproduct.forEach(li => {
     }
 });
 
+// Menu Filter
 
 // Image Popup
 document.querySelectorAll('.items img').forEach(image => {
