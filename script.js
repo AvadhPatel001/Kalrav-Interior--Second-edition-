@@ -85,7 +85,7 @@ function scrollTestimonialsRight() {
 // Form
 
 (function () {
-    emailjs.init("UfMw565viGSzprK1v");
+    emailjs.init("dcYWOJyWfVEaIqwCr");
 })();
 
 function validateForm() {
@@ -129,7 +129,7 @@ function validateForm() {
 }
 
 function sendEmail(event) {
-    event.preventDefault();
+    event.preventDefault(); 
     if (!validateForm()) {
         return;
     }
@@ -144,11 +144,11 @@ function sendEmail(event) {
         message: message
     };
 
-    emailjs.send("service_zhx1fsh", "template_1pajm34", params)
-        .then(function (response) {
+    emailjs.send("service_flfn3n5", "template_f6lx4ye", params)
+        .then(function(response) {
             alert("Your form is submited successfully!");
-            document.getElementById("contactForm").reset();
-        }, function (error) {
+            document.getElementById("contactForm").reset(); 
+        }, function(error) {
             alert("Failed to send email: " + JSON.stringify(error));
         });
 }
