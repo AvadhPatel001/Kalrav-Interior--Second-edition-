@@ -160,8 +160,8 @@ function sendEmail(event) {
 // WhatsApp message
 
 function redirectToWhatsApp() {
-    const phoneNumber = "+919913560209";
-    const message = encodeURIComponent("Hello! I'm interested to hire you as Interior Designer.");
+    const phoneNumber = "+919586641338";
+    const message = encodeURIComponent("Hello! I'm interested to hire you as Interior Designer...");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = url;
 }
