@@ -686,6 +686,7 @@ marquee a img {
 }
 
 .contactForm {
+  padding: 0;
   width: 50%;
   position: relative;
   left: 50%;
@@ -694,7 +695,7 @@ marquee a img {
 
 .contactForm input,
 .contactForm textarea {
-  width: 100%;
+  width: 95%;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid black;
